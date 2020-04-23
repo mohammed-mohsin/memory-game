@@ -6,7 +6,7 @@ body {
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
-  margin:  5%;
+  margin: 5%;
   color: #FEF2BF;
 }
 
@@ -53,14 +53,14 @@ body {
 }
 
 
-.bottom-container{
-  
+.bottom-container {
+
   padding: 50px 0 20px;
 
 }
-.copyright{
-  
+
+.copyright {
   color: #EAF6F6;
-  font-size:0.75rem ;
-  padding: 20px 0 ;
+  font-size: 1rem;
+  padding: 20px 0;
 }
