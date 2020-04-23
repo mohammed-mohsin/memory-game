@@ -8,12 +8,14 @@ let userClickedPattern = [];
 let started = false;
 
 let level = 0;
-$(document).click(function(){
+$(".s-button").click(function(){
     if(!started){
         $("#level-title").text("Level-" + level);
         nextSequence();
         started = true;
     }
+
+
 });
 
 
@@ -52,13 +54,20 @@ function checkAnswer(currentLevel){
 
         $("body").addClass("game-over");
         
-        $("#level-title").text("Game Over, Press Any Key to Restart");
-        
+        $("#level-title").text("Well Done!!, The Score Is " +(level-1)+ " Try Again"   +" Click Start Button to Restart Game");
+
+        if(level==0){
+          $("#level-title").text("OOPS!!, The Score Is " +level+" Try Again" +" Click Start Button to Restart Game");
+
+        }
+        console.log(level);
         setTimeout(function () {
           $("body").removeClass("game-over");
         }, 200);
 
         startOver();
+
+        
   
       }
 }
@@ -66,9 +75,11 @@ function checkAnswer(currentLevel){
 
 function nextSequence() {
 
+  $(".s-button").css( "display", "none" );
+
     userClickedPattern = [];
 
-    level++;
+    result = level++;
 
     $("#level-title").text("Level-" + level);
 
@@ -113,4 +124,5 @@ function startOver(){
     level = 0;
     gamePattern = [];
     started = false;
+    $(".s-button").css( "display", "inline-block" );
 }
