@@ -6,8 +6,9 @@ body {
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
-  margin: 5%;
+  margin: 3%;
   color: #FEF2BF;
+  line-height: 4rem;
 }
 
 .container {
@@ -50,6 +51,27 @@ body {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+.s-button {
+  background-color: #011F3F;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  color: #FEF2BF;
+  border: 2px solid #e7e7e7;
+  border-radius: 5%;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2rem;
+  margin: 10px 2px;
+  cursor: pointer;
+}
+
+.s-button:hover {
+  background-color: #e7e7e7;
+  color: black;
 }
 
 
